@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountIn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address[]",
+						"name": "path",
+						"type": "address[]"
+					}
+				],
+				"name": "getAmountsOut",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "amounts",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/uniForkInterface.sol": "IUNIFORK"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/uniForkInterface.sol": {
+			"keccak256": "0x983f4fce17af98ffe2248013241d963ee1276726d2f3612194a96f5e81ac6f6c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://241ab6d69e29e968e7ee5b6055e893d74a105f9fd1c92d5e856f8bf6589c5029",
+				"dweb:/ipfs/QmbvKkKogkeoXde51vBv97oGBYFLg5R2SgjD3cGX4CSDnQ"
+			]
+		}
+	},
+	"version": 1
+}
