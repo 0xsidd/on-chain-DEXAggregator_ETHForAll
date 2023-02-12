@@ -6,6 +6,100 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "DAI",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "OHM",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "USDC",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "USDT",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "WETH",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "allPath",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -25,13 +119,30 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "getBestPriceWithPaths",
+				"outputs": [
 					{
-						"internalType": "address[]",
-						"name": "path",
-						"type": "address[]"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getPrice",
 				"outputs": [
 					{
@@ -51,7 +162,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "selectors",
+				"name": "path",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -149,11 +260,11 @@
 			]
 		},
 		"DEXLogic.sol": {
-			"keccak256": "0x04897c375105fe52899606ff5250acc90367422bbd69462b134f0d2fcab25496",
+			"keccak256": "0x85271f8c5cdc122efac6ebc7cc1dde9d7f138a45652c02cbf2b430658b14b2d2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4847c493479b9814db695d984db4054c6ae24fc5393daa26c0feec72dcd67bb7",
-				"dweb:/ipfs/QmSJd4pCMGSxSY7qpWt75PUtVaEj9MHw76neqJz1iVjLgN"
+				"bzz-raw://4e40e96771466be383124da8ef47f0a989442b0d8d58e1382c76cf151ac6a2fa",
+				"dweb:/ipfs/QmaMCSLFoaNuU9hBm7939c67xLdUkJypn45LUY2u3aombT"
 			]
 		},
 		"uniForkInterface.sol": {
