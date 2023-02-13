@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.4;
+pragma solidity =0.8.18;
 
 import {IUNIFORK} from "./uniForkInterface.sol";
 
@@ -73,5 +73,28 @@ contract PathFinding{
         uint256 four = IUNIFORK(dex[1]).getAmountsOut(three,allPath[3])[1];
         // return(finalVal,IUNIFORK(dex[0]).getAmountsOut(1e18,path)[1]);
         return(bestValue,four,IUNIFORK(dex[1]).getAmountsOut(1e18,path)[1]);
+    }
+
+    function getBestPriceWithPaths_()public view returns(uint256,uint256,uint256){
+        uint256 bestValue;
+        uint256 tempVal;
+        uint256 amountOut;
+
+        for(uint256 i; i<allPath.length; i++){
+
+            for(uint256 j; j<dex.length; j++){
+
+                if(i==0){
+                    if(tempVal<IUNIFORK(dex[j]).getAmountsOut(1e18,allPath[0])[1]){
+                        tempVal = IUNIFORK(dex[j]).getAmountsOut(1e18,allPath[i])[1];
+                    }
+                }
+                else{
+                    if(tempVal<IUNIFORK(dex[j]).getAmountsOut(tempVal,allPath[0])[1]){
+                        tempVal = IUNIFORK(dex[j]).getAmountsOut(tempVal,allPath[i])[1];
+                    }
+                }
+            }
+        }
     }
 }

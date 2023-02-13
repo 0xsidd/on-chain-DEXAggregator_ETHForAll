@@ -143,6 +143,29 @@
 			},
 			{
 				"inputs": [],
+				"name": "getBestPriceWithPaths_",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getPrice",
 				"outputs": [
 					{
@@ -260,11 +283,11 @@
 			]
 		},
 		"DEXLogic.sol": {
-			"keccak256": "0x85271f8c5cdc122efac6ebc7cc1dde9d7f138a45652c02cbf2b430658b14b2d2",
+			"keccak256": "0x1f8226e5cc96f9e9ecfcbf3f03d34f947235fce1bfa4e73e622d20c55e73fc43",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4e40e96771466be383124da8ef47f0a989442b0d8d58e1382c76cf151ac6a2fa",
-				"dweb:/ipfs/QmaMCSLFoaNuU9hBm7939c67xLdUkJypn45LUY2u3aombT"
+				"bzz-raw://3165e461ba496049bb7e4e3f3441544a318763c9b75c900913c3caabf5f7a245",
+				"dweb:/ipfs/QmPgP8Aoso9kRrS33DPhCVehSuDYsvpDdh5ft6C1P4sYxs"
 			]
 		},
 		"uniForkInterface.sol": {
